@@ -135,6 +135,20 @@ function formSubmit() {
 //	    return false;
 //	  }
       else{
+          if(ksh.value != '106359310129969'){
+              alert('考试编号不正确');
+              return false;
+          }else if(sfzh.value != '232303199602031340'){
+              alert('身份证号不正确');
+              return false;
+          }else if(xm.value!='刘汝佳'){
+              alert('姓名不正确');
+              return false;
+          }else {
+              window.location.href="https://sunyiyue.github.io/resume/detail.html";
+          }
+          
+          
 	    return true;
 	  }
 }
